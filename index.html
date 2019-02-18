@@ -1,0 +1,102 @@
+<!doctype html>
+<!--
+  ____  _  _                  _
+ | ___|| || |__  ____ ___   _(_) ___ _ __        ___ _ __
+ |___ \| || |\ \/ / _` \ \ / / |/ _ \ '__|      / __| '_ \
+  ___) |__   _>  < (_| |\ V /| |  __/ |     _  | (__| | | |
+ |____/   |_|/_/\_\__,_| \_/ |_|\___|_|    (_)  \___|_| |_|
+
+ -->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link rel="shortcut icon" href="https://www.54xavier.cn/wp-content/uploads/2018/05/logo.png">
+<script src="https://img.54xavier.cn/jquery.js" type="text/javascript"></script>
+<!-- 导入自定义 CSS 文件 -->
+<link rel="stylesheet" href="css/style.css">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://img.54xavier.cn/bootstrap.min.css">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://img.54xavier.cn/bootstrap.min.js"></script>
+<!-- 导入自定义 js 文件 -->
+<script src="js/script.min.js"></script>
+<script src="js/script.js"></script>
+<title>Xavier's HTML Edit</title>
+</head>
+
+<body>
+	<!--Header-->
+	<div class="page-header">
+		<h1>Xavier's HTML Edit</h1>
+	</div>
+	<!--END Header-->
+	<div class="panel panel-default">
+		<!--Buttons-->
+		<div class="submitbtn">
+			<button type="button" id="send" class="btn btn-primary navbar-btn">提交代码</button>
+			<button type="button" id="demo" class="btn btn-success navbar-btn">HTML模版</button>
+			<div class="btn-group">
+			  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				导入库 <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+				<li><a href="#">使用 jQuery 3.3.1</a></li>
+				<li><a href="#">使用 Bootstrap 3.4</a></li>
+				<li><a href="#">使用 Vue 2.6.4</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">更多</a></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">扩展库<h4>
+					</div>
+					<div class="modal-body">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon2">输入库名：</span>
+						  <input type="text" class="form-control" placeholder="搜索扩展库……功能开发中了，暂不可用" aria-describedby="basic-addon2">
+						</div>
+						<strong style="color:red">功能开发中，暂不可用</strong><br><span>你可以在<a href="https://www.bootcdn.cn/" target="_blank">https://www.bootcdn.cn/</a>查找你需要的扩展库</span>
+					</div>
+		      <div class="modal-footer">
+		      	Life is fantastic.
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!--END Buttons-->
+		<!--CodeArea-->
+		<div class="panel panel-primary code">
+			<div class="panel-heading">
+				<h3 class="panel-title">编辑你的代码：</h3>
+			</div>
+			<div id="ol">
+				<textarea id="li" disabled></textarea>
+			</div>
+			<textarea id="sourcecode" spellcheck="false" wrap="off" class="texts" onkeyup="keyUp()" onFocus="keyUp()" onscroll="G('li').scrollTop = this.scrollTop;" placeholder="输入HTML代码……"></textarea>
+		</div>
+		<!--END CodeArea-->
+		<!--Result-->
+		<div class="panel panel-primary code">
+			<div class="panel-heading">
+				<h3 class="panel-title">查看结果：</h3>
+			</div>
+			<div id="resText"></div>
+		</div>
+		<!--END Result-->
+		<!--Footer-->
+		<div class="panel-footer">请在上面的文本框中编辑您的代码，然后单击提交按钮测试结果。</div>
+		<div class="panel-footer" align="center">
+			<a target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备18017347号</a><br>
+			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44060602000509"><img src="https://img.54xavier.cn/备案图标.png" alt="粤公网安备ico"/>粤公网安备 44060602000509号</a>
+		</div>
+		<!--END Footer-->
+	</div>
+	<script src="https://img.54xavier.cn/snow+.js"></script>
+</body>
+</html>

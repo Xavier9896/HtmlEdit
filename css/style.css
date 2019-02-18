@@ -1,0 +1,66 @@
+*{
+	cursor: url('https://img.54xavier.cn/default.cur'), auto;
+}
+.page-header h1{
+	padding:0 0 0 0.5%;
+}
+.submitbtn{
+	padding:0 0 0 0.5%;
+}
+.code{
+	float: left;
+	width: 49.5%;
+	height: 500px;
+	border: 1px solid #111;
+	margin-left: 0.4%;
+}
+.code #sourcecode{
+	width: 100%;
+	height: 460px;
+	border: 0 none;
+	outline: none;
+	resize: none;
+}
+.code #resText{
+	padding:0 5px 0 5px;
+}
+#iframeResult{
+	width: 100%;
+	height: 460px;
+}
+/*文本框显示行号*/
+#ol{
+	position:absolute;
+	top: 210px;
+	left: 0.5%;
+	height: 450px;
+	z-index:1;
+	padding:0;
+	margin:0;
+	border:0;
+	background:#ecf0f5;
+	width:23px;
+	text-align:left;
+	resize: none;
+	opacity: 0.5;
+}
+#li{
+	background:#ecf0f5;
+	height:460px;
+	overflow:hidden;
+	width:32px;
+	border:none;
+	line-height:20px;
+	margin:0;
+	text-align:center;
+	resize: none;
+}
+.texts{
+	width: 100%;
+	height: 460px;
+	border: 0 none;
+	outline: none;
+	resize: none;
+	padding: 0 0 0 35px;
+	overflow: auto;
+}
